@@ -1,0 +1,39 @@
+/* */
+#contenedor{
+	display: flex;
+	display: -webkit-flex;
+	background: #0cc;
+	width: 600px;
+	/*justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+	justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;*/
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+#caja1{
+	background: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+}
+#caja2{
+	background: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+}
+#caja3{
+	background: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+}
+#caja4{
+	background: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+}

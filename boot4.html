@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Anidando columnas</title>
+        <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .show-grid {
+              margin-bottom: 2em;
+            }
+
+            .show-grid [class^="col-"] {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              border: 1px solid #AAA;
+              background-color: #EEE;
+              background-color: rgba(200, 200, 200, 0.3);
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="container">
+             <div class="row show-grid">
+                <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+                <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+              </div>
+        </div>
+    </body>
+</html>

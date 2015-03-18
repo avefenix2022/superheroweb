@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <style>
+        /*comentarios*/
+
+        /*Selector universal*/
+        /*
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+        */
+        /*Selectores de elementos*/
+            p{
+                font-family: Verdana;
+            }
+        /*Selectores id*/
+            #contenedor{
+                background: #f00;
+            }
+        /*Selectores de clase*/
+            .parrafo1{
+                background: #0f0;
+            }
+            .parrafo2{
+                background: #00f;
+            }
+        /*Selectores descendiente*/
+            #contenedor p{
+                color: #fff;
+            }
+            /*
+            #contenedor p, h1{
+                color: #fff;
+            }*/
+            #contenedor p, #contenedor h1{
+                color: #fff;
+            }
+            /*Selector hijo*/
+            /*Solo en negrita los primeros li*/
+            #lista > li{
+                font-weight: bold;
+            }
+            h1 + h2{
+                color:#ff0;
+            }
+            h1[title]{ /*poseee el atributo title*/
+                color:#00f;
+            }
+            h1[title="titulo principal"]{ /**/
+                color:#0ff;
+            }
+            h1[title^="el"]{
+                color:#f0f;
+            }
+            h1[title*="$"]{
+                color:#000;
+            }
+            a.vinculo:hover{
+                background: #ccc;
+            }
+            a.vinculo:active{
+                background: #333;
+            }
+            a:focus:active{
+                background: #f00;
+            }
+            li:first-child{
+                background: #ff0;
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        
+        <h1>Encabezado h1 fuera del contenedor</h1>
+        <div id="contenedor">
+            <h1>Encabezado h1 dentro del contenedor</h1>
+            <h2>Encabezado 2</h2>
+            <p class="parrafo1">
+                Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. 
+                Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. 
+                Proin a ullamcorper sed blandit..
+            </p>
+            <p  class="parrafo2">
+                Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. 
+                Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. 
+                Proin a ullamcorper sed blandit..
+            </p>
+            <hr />
+            <ul id="lista">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li> 
+                    <ul>
+                        <li>Elemento 2.1</li>
+                        <li>Elemento 2.2</li>
+                    </ul>
+                <li>Elemento 3</li>
+            </ul>
+										
+            
+        </div>
+        <h1 title="">Con atributo title</h1>
+        <h1 title="titulo principal">Con atributo title</h1>
+        <h1 title="el otro titulo">Con atributo title</h1>
+        <h1 title="titulo $">Con atributo title</h1>
+
+        <a class="vinculo" href="#">para probar a</a>
+        <br />
+        <a href="#">para probar focus+active</a>
+
+    </body>
+</html>

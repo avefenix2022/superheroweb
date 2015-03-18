@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>FRANCISCO_MARINAS_2014_01_30</title>
+
+        <style>
+            *{                
+              margin: 0px;
+              padding: 0px;  
+            }
+            #contenedor_principal{
+                width: 900px;
+                margin: 0 auto;
+            }
+            #azul{
+                color: #00f;
+            }
+            #lista{
+                margin:  20px;
+            }
+            #caja1, #caja2, #caja3, #caja4{
+                width: 300px;
+                height: 200px;
+                background: #ccc;
+                margin: 5px;
+            }
+            #caja2, #caja4{
+                position: relative;
+                left: 300px;   
+            }
+            
+            #contenedor{
+	            display: flex;
+	            display: -webkit-flex;
+	            background: #0cc;
+	            width: 900px;
+	            height: 200px;
+	            flex-wrap: wrap;
+	            -webkit-flex-wrap: wrap;
+	            align-content: stretch;
+	            -webkit-align-content: stretch;
+            }
+            #caja1b{
+	            background: #ccc;
+	            margin: 5px;
+	            flex: 1 1 200px;
+	            -webkit-flex: 1 1 200px;
+            }
+            #caja2b{
+	            background: #ccc;
+	            margin: 5px;
+	            flex: 1 1 200px;
+	            -webkit-flex: 1 1 200px;
+            }
+            #caja3b{
+	            background: #ccc;
+	            margin: 5px;
+	            flex: 1 1 100px;
+	            -webkit-flex: 1 1 100px;
+            }
+            #caja4b{
+	            background: #ccc;
+	            margin: 5px;
+	            flex: 1 1 400px;
+	            -webkit-flex: 1 1 400px;
+            }
+                    </style>
+
+    </head>
+    <body>
+        <div id="contenedor_principal">
+            <h1>Título Principal</h1>
+            <h2>Título Secundario</h2>
+            <p id="azul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nobis sunt qui molestias ab dolorum odit veniam quas illum laboriosam perferendis consequatur corporis totam tempora quia blanditiis repellat, inventore soluta. ipsum dolor sit amet, consectetur adipisicing elit. Magnam alias, voluptas sint, quod expedita sequi blanditiis, voluptatem sit nulla aperiam reiciendis ea officia minima quae debitis inventore, architecto id? Eum! ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis temporibus soluta eum quibusdam officia fugit a laudantium, nemo ab sed, impedit, veritatis culpa accusantium facilis nostrum sapiente eius minus illum!</p>
+            <img src="http://newmanchirosd.com/wp-content/uploads/2012/08/wooden_path_900x400.jpg" alt="imagen" />
+            <ol id="lista">
+                <li>Avilés</li>
+                <li>Oviedo</li>
+                <li>Gijón</li>
+                <li>Mieres</li>
+                <li>Pola de Siero</li>
+            </ol>
+
+            <a href="http://www.w3c.es" />W3C</a>
+
+            <div id="caja1">Caja1</div>
+            <div id="caja2">Caja2</div>
+            <div id="caja3">Caja3</div>
+            <div id="caja4">Caja4</div>
+
+                <section id="contenedor">
+                  <div id="caja1b">Caja1</div>
+                  <div id="caja2b">Caja2</div>
+                  <div id="caja3b">Caja3</div>
+                  <div id="caja4b">Caja4</div>
+                </section>
+        </div>
+    </body>
+</html>

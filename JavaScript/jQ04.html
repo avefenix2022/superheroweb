@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>jQuery</title>
+
+         <script src="js/jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                   $('.negrita1,.negrita2').css('border', '1px solid black');
+              });
+        </script>
+        <style>
+            p{
+                width:  200px;
+                padding:  3px;
+            }
+            div{
+                width:  200px;
+                padding:  3px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <p id='uno' class="negrita1">Párrafo 1</p>
+        <p id='dos' class="negrita2">Párrafo 1</p>
+        <div><p id='tres'>Párrafo 1</p></div>
+    </body>
+</html>

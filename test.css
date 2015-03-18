@@ -1,0 +1,33 @@
+#contenedor{
+	display: flex;
+	display: -webkit-flex;
+	width: 600px;
+}
+#caja1{
+	flex: 1;
+	-webkit-flex: 1;
+	background: #ccc;
+	height: 150px;
+	margin: 5px;
+}
+#caja2{
+	flex: 1;
+	-webkit-flex: 1;
+	background: #ccc;
+	height: 150px;
+	margin: 5px;
+}
+#caja3{
+	flex: 1;
+	-webkit-flex: 1;
+	background: #ccc;
+	height: 150px;
+	margin: 5px;
+}
+#caja4{
+	flex: 1;
+	-webkit-flex: 1;
+	background: #ccc;
+	height: 150px;
+	margin: 5px;
+}

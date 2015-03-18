@@ -1,0 +1,45 @@
+/* */
+#contenedor{
+	display: flex;
+	display: -webkit-flex;
+	background: #0cc;
+	width: 600px;
+	height: 200px;
+	align-items: baseline;
+	-webkit-align-items: baseline;
+}
+#caja1{
+	background: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	/****************/
+	margin-top: 30px;
+	/****************/
+	flex: 1;
+	-webkit-flex: 1;
+}
+#caja2{
+	background: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	flex: 1;
+	-webkit-flex: 1;
+}
+#caja3{
+	background: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	flex: 1;
+	-webkit-flex: 1;
+}
+#caja4{
+	background: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	flex: 1;
+	-webkit-flex: 1;
+}

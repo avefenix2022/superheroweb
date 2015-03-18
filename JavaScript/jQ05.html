@@ -1,0 +1,36 @@
+<!DOCTYPE html
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>jQuery</title>
+
+         <script src="js/jquery.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#box *').css('border', '1px double black');
+
+            });
+        </script>
+        <style>
+            p{
+                text-align: center;
+            }
+            div{
+                width:  80px;
+                height: 100px;
+                margin: 5px;
+                float: left;
+                background: #9cf;
+            }
+        </style>
+
+    </head>
+    <body>
+        <span id="box">
+                <div></div>
+                <div><p>X <img src="img/img40x40.png" alt=""> X</p></div>
+                <div><p>Párr<br /><span>a</span><br />fo</p></div>
+        </span>
+    </body>
+</html>

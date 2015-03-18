@@ -1,0 +1,31 @@
+/* */
+#contenedor{
+	display: flex;
+	display: -webkit-flex;
+	background: #0cc;
+	width: 600px;
+}
+#caja1{
+	background: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+}
+#caja2{
+	background: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+}
+#caja3{
+	background: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+}
+#caja4{
+	background: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+}

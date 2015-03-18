@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Javascript - jQuery</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Script -->
+    <script src='Script.js'></script>
+
+    <script>
+
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Start</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header id="jumbotron" class="jumbotron hero-spacer">
+            <h1>Hola Mundo! Javascript</h1>
+            <p>En un archivo <code>Script.js</code> se añade el siguiente código:</p>
+<pre>
+function holamundo(){
+    alert("HOLA MUNDO");
+}
+</pre>
+            <p><code>function</code> hace referencia a una función que encierra una serie de líneas de código que se van a ejecutar cada vez que se llame a la función <code>holamundo()</code></p>
+            <p><code>alert()</code> muestra una ventana emergente con el texto encerrado dentro de los paréntesis.</p>
+            <p>Las instrucciones en javascript finalizan todas en <code>;</code></p>
+            <p>Para vincular este archivo <code>Script.js</code> al html se añade la cadena:</p>
+<pre>
+&lt;script src='Script.js'&gt;&lt;/script&gt;
+</pre>
+            <p>Lo siguiente es asignar a un evento una llamada a esa función, por ejemplo al hacer clic en el siguiente botón <strong>Call to action!</strong></p>
+<pre>
+&lt;a class="btn btn-primary btn-large" onclick="holamundo()"&gt;Call to action!&lt;/a&gt;
+</pre>
+            <p><a class="btn btn-primary btn-large" onclick="holamundo()">Call to action!</a>
+            </p>
+            <p>Se puede insertar llamadas a Javascript desde el código html, por ejemplo a la función:</p>
+<pre>
+function mostrarHoy(){
+    var hoy = new Date();
+    document.write(hoy.toDateString());
+}
+</pre>
+            <p>se la puede llamar desde el html:</p>
+<pre>
+&lt;p&gt;La fecha de hoy es: &lt;script&gt;mostrarHoy();&lt;/script>&lt;/p&gt;
+</pre>
+            <p>La fecha de hoy es: <script>mostrarHoy();</script></p>
+
+            <hr />
+            <h1>Hola Mundo! jQuery</h1>
+            <p>jQuery es una biblioteca de Javascript cuyo lema es:</p>
+            <blockquote>
+            "escribir menos, hacer más"
+            </blockquote>
+            <p>Hace que la programación sea divertida, rápida y reconfortante.</p>
+            <p>Con jQuery, en una sola línea de código se puede conseguir lo mismo que con 100 de Javascript.</p>
+            <p>Por ejemplo el código de jQuery:</p>
+<pre>
+function animacion() {
+    $("body").hide().fadeIn(3000);
+}
+</pre>
+            <p>Y en el html añadir en el botón el evento <code>onclick</code>:</p>
+<pre>
+onclick="$(document).ready(animacion);
+</pre>
+            <p><a class="btn btn-primary btn-large" onclick="$(document).ready(animacion);">Call to action!</a>
+            </p>
+        </header>
+
+        <hr>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Javascript</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/img800x500_1.jpg" alt="">
+                    <div class="caption">
+                        <h3>El lenguaje de Javascript</h3>
+                        <p>Conceptos básicos de Javascript.</p>
+                        <p>
+                            <a href="lenguaje.html" class="btn btn-primary">Acceder!</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/img800x500_2.jpg" alt="">
+                    <div class="caption">
+                        <h3>repiteNombre()</h3>
+                        <p id="demo"></p>
+                        <p>
+                            <a class="btn btn-primary" onclick="repiteNombre()">repiteNombre()</a>
+                        </p>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/img800x500_3.jpg" alt="">
+                    <div class="caption">
+                        <h3>eligeTutor()</h3>
+                        <p id="tutor"></p>
+                        <p>
+                            <a class="btn btn-primary" onclick="eligeTutor()">eligeTutor()</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/img800x500_4.jpg" alt="">
+                   <div class="caption">
+                        <h3>eligeTutor2()</h3>
+                        <p id="tutor2"></p>
+                        <p>
+                            <a class="btn btn-primary" onclick="eligeTutor2()">eligeTutor2()</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>jQuery</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/img800x500_5.jpg" alt="">
+                    <div class="caption">
+                        <h3>Eventos con jQuery</h3>
+                        <p>Conceptos básicos de Eventos.</p>
+                        <p>
+                            <a id="cta1" class="btn btn-primary">CTA1!</a>
+                            <a id="cta2" class="btn btn-primary">CTA2!</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/img800x500_6.jpg" alt="">
+                    <div class="caption">
+                        <h3>Añadir contenido</h3>
+                        <p>
+                            <a  id="dothtml" class="btn btn-primary">dothtml</a>
+                            <a  id="dottext" class="btn btn-primary">dottext</a>
+                        </p>
+                        <p id="origen"><strong>Origen</strong></p>
+                        <p id="destino"><small>Destino</small></p>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/img800x500_3.jpg" alt="">
+                    <div class="caption">
+                        <h3>Añadir contenido</h3>
+                        <p>
+                            <a id="dotappend" class="btn btn-primary">dotappend</a>
+                            <a id="dotprepend" class="btn btn-primary">dotprepend</a>
+                        </p>
+                        <ol id="lista">
+                            <li>Martes</li>
+                            <li>Miércoles</li>
+                            <li>Jueves</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/img800x500_4.jpg" alt="">
+                   <div class="caption">
+                        <h3>Añadir contenido</h3>
+                        <p>
+                            <a id="dotbefore" class="btn btn-primary">dotbefore</a> 
+                            <a id="dotafter" class="btn btn-primary">dotafter</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

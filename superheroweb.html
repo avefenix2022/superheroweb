@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+		background: #999;
+	}
+	img {
+		display: block; /*Para eliminar el espacio debajo de la imagen*/
+	}
+	#main_contenedor{
+		width: 1024px;
+		margin: 0 auto;
+		background: #000;
+	}
+	#cabecera{
+		width: 1024px;
+		background: #f00;
+
+	}
+	#barra_menu{
+		width: 1024px;
+		background: #ff0;
+	}
+	#logo{
+		float: left;
+		width: 400px;
+		height: 150px;
+	}
+	#menu{
+		float: left;
+		width: 624px;
+		height: 150px;
+	}
+	#menu ul{
+		clear: both;
+		float: left;
+		width: 625px;
+		height: 150px;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	#menu ul li{
+		float: left;
+		width: 155px;
+		height: 150px;
+		border-right: 1px solid #7c7c7c;
+		border-bottom: 1px solid #7c7c7c;
+	}
+	#menu ul li a{
+		display: block;
+		text-decoration: none;
+		width: 155px;
+		height: 150px;
+		text-align: center; 
+	}
+		#menu ul li a span{
+		width: 155px;
+		height: 150px;
+		font-size: 20px;
+		position: relative;
+		top: 65px;
+	}
+	#contenedor{
+	display: flex;
+	display: -webkit-flex;
+	width: 1024px;
+	}
+	#caja1a{
+		flex: 1;
+		-webkit-flex: 1;
+		background: #ccc;
+		margin: 5px;
+	}
+	#caja2a{
+		flex: 1;
+		-webkit-flex: 1;
+		background: #ccc;
+		margin: 5px;
+	}
+	#caja3a{
+		flex: 1;
+		-webkit-flex: 1;
+		background: #ccc;
+		margin: 5px;
+	}
+	#caja4a{
+		flex: 1;
+		-webkit-flex: 1;
+		background: #ccc;
+		margin: 5px;
+	}
+
+
+
+	#caja1b{
+		flex: 2;
+		-webkit-flex: 2;
+		background: #ccc;
+		margin: 5px;
+	}
+	#caja2b{
+		flex: 1;
+		-webkit-flex: 1;
+		background: #ccc;
+		margin: 5px;
+	}
+	#caja3b{
+		flex: 1;
+		-webkit-flex: 1;
+		background: #ccc;
+		margin: 5px;
+	}
+	#caja4b{
+		flex: 1;
+		-webkit-flex: 1;
+		background: #ccc;
+		margin: 5px;
+	}
+
+
+
+	#caja1c{
+		width: 300px;
+		background: #ccc;
+		margin: 5px;
+	}
+	#caja2c{
+		flex: 1;
+		-webkit-flex: 1;
+		background: #ccc;
+		margin: 5px;
+	}
+	#caja3c{
+		flex: 1;
+		-webkit-flex: 1;
+		background: #ccc;
+		margin: 5px;
+	}
+	#caja4c{
+		flex: 1;
+		-webkit-flex: 1;
+		background: #ccc;
+		margin: 5px;
+	}
+
+
+
+	#caja1d{
+		flex: 1 1 424px;
+		-webkit-flex: 1 1 424px;
+		background: #ccc;
+		margin: 5px;
+	}
+	#caja2d{
+		flex:  1 5 200px;
+		-webkit-flex: 1 5 200px;
+		background: #ccc;
+		margin: 5px;
+	}
+	#caja3d{
+		flex:  1 5 200px;
+		-webkit-flex: 1 5 200px;
+		background: #ccc;
+		margin: 5px;
+	}
+	#caja4d{
+		flex:  1 5 200px;
+		-webkit-flex: 1 5 200px;
+		background: #ccc;
+		margin: 5px;
+	}
+
+
+
+</style>
+</head>
+<body>
+	<div id="main_contenedor">
+		<!--CAPA MAIN CONTENEDOR *******-->
+		<header id="cabecera">
+		
+		<img src="img/darth-vader-header.jpg" alt="Imagen de la cabecera">
+		
+		<div id="barra_menu">
+			<img id="logo" src="img/logo.jpg" alt="logo" hspace="0" vspace="0" border="0">
+			
+			<nav id="menu">
+				<ul>
+					<li><a href="#"><span>Inicio</span></a></li>
+					<li><a href="#"><span>Servicios</span></a></li>
+					<li><a href="#"><span>Contacto</span></a></li>
+					<li><a href="#"><span>Blog</span></a></li>
+				</ul>
+			</nav>
+		</div>
+		</header>
+
+		<div id="contenedor">
+			<div id="caja1a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+			<div id="caja2a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+			<div id="caja3a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+			<div id="caja4a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+		</div>
+
+
+
+
+		<div id="contenedor">
+			<div id="caja1b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+			<div id="caja2b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+			<div id="caja3b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+			<div id="caja4b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+		</div>
+
+
+
+		<div id="contenedor">
+			<div id="caja1c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+			<div id="caja2c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+			<div id="caja3c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+			<div id="caja4c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+		</div>
+
+
+
+		<div id="contenedor">
+			<div id="caja1d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+			<div id="caja2d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+			<div id="caja3d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+			<div id="caja4d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam qui, quam sunt architecto blanditiis eveniet sapiente omnis reprehenderit illum odit modi. Illum hic vero numquam, officia, consequatur voluptatem labore.</div>
+		</div>
+
+
+
+
+
+
+	</div><!--FIN CAPA MAIN CONTENEDOR *******-->
+</body>
+</html>

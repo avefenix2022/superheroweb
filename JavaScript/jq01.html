@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('div.menu_punto').hide();
+
+          $('p.menu_capitulo').click(function(){
+
+            $(this).next('div.menu_punto').slideDown(300).siblings('div.menu_punto').slideUp('slow');
+
+          });
+
+        });
+    </script>
+
+    <style>
+body{
+  margin: 10px;
+  font: 0.8em Arial, Helvetica, sans-serif;
+}
+.menu{
+  width: 150px;
+}
+.menu_capitulo{
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+  margin: 1px;
+  font-weight: bold;
+  background: #9cf;
+  border: 1px solid black;
+}
+.menu_punto a{
+  display: block;
+  color: black;
+  background-color: white;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.menu_punto a:hover{
+  color: black;
+  text-decoration: underline;
+}
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+<div>
+    <div class="menu">
+      <p class="menu_capitulo">Capitulo 1</p>
+      <div class='menu_punto'>
+        <a href='#'>Punto 1</a>
+        <a href='#'>Punto 2</a>
+        <a href='#'>Punto 3</a>
+      </div>
+
+
+
+      <p class="menu_capitulo">Capitulo 2</p>
+      <div class='menu_punto'>
+      <a href='#'>Punto 1</a>
+      <a href='#'>Punto 2</a>
+      <a href='#'>Punto 3</a>
+      </div>
+
+
+      <p class="menu_capitulo">Capitulo 3</p>
+      <div class='menu_punto'>
+      <a href='#'>Punto 1</a>
+      <a href='#'>Punto 2</a>
+      <a href='#'>Punto 3</a>
+      </div>
+    </div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
