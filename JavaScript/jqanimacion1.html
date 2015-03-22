@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('#start').click(function(){
+        $('#box').animate({left:150,
+                  width: "200px",
+                  opacity: 0.5
+                  }, 1500)
+        .animate( { fontSize:"24px" } , 1000 )
+        .animate( { borderLeftWidth:"15px" }, 1000)
+        .animate( { opacity: 1 }, 1000);
+        $("#reset").click(function(){
+          $("#box").css({width:"",left:"",fontSize:"",opacity:"",borderWidth:""});
+        });
+      });
+    });
+    </script>
+
+    <style>
+    #box { position: relative; 
+           width: 110px; 
+           height: 25px; 
+           background-color: #9cf; 
+           margin: 20px 0px; 
+           padding-left: 20px; 
+           padding-right: 20px;
+           padding-top: 5px;
+           font: 0.75em Arial, sans-serif; 
+           border: 1px solid #0000c0;}
+    </style>
+
+  </head>
+  <body>
+    <input type="button" id="start" value="Ejecutar la animación"> 
+    <input type="button" id="reset" value="Reset"> 
+    <div id="box">Animación jQuery</div>
+  </body>
