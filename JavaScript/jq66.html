@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    <script src="js/jquery.js"></script>
+    <script>
+      $(document).ready(function(){
+          
+          $('button').on('click',function(){
+              $('div.primero').slideUp(300).fadeIn(600);
+              $('div.segundo').slideUp(300).delay(2000).fadeIn(600);
+          });
+      
+      });
+    </script>
+
+    <style>
+
+      div{
+        width: 60px;
+        height: 60px;
+        float: left;
+        border: 1px solid black;
+        font-size: 52px;
+        text-align: center;
+      }
+      .primero{
+        background: white;
+      }
+      .segundo{
+        background: #9cf;
+        margin-left: 10px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>delay(duración)</h1>
+    <p>Al hacer clic en el botón se muestra la capa 1.</p>
+    <p>La capa 2 aparece con un retraso de 2 segundos.</p>
+    
+    <p><button type='button'>Run!</button></p>
+
+    <div class='primero'>1</div>
+    <div class='segundo'>1</div>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
