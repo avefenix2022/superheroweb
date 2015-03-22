@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('ul.hover_bloc li').hover(function(){
+        $(this).find('img').animate({left:'300px'},{duration:500});
+      }, function(){
+        $(this).find('img').animate({left:'8px'},{duration:500});
+      });
+    });
+    </script>
+
+    <style>
+    ul {
+      margin-left: -12px;
+    }
+    ul.hover_bloc li { 
+     position: relative; 
+     width: 184px; 
+     height: 136px; 
+     padding: 16px; 
+     list-style-type: none;
+     font: 1.4em Arial, sans-serif; 
+     text-align: justify;
+     color: black; 
+     overflow: hidden; 
+     border : 1px solid black;
+   }
+    ul.hover_bloc li img { 
+     position: absolute;
+     top: 8px; 
+     left: 8px;
+     border: 0px;
+   }
+    </style>
+
+  </head>
+  <body>
+    <ul class="hover_bloc">
+      <li>
+        <img alt="" src="img/parque_eolico.jpg"> 
+        Parque eólico off-shore el más importante del mar del Norte en Dinamarca
+      </li>
+    </ul>
+  </body>
