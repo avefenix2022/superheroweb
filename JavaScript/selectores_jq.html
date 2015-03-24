@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        
+        $('#todosli').click(function(){
+            $('li').toggleClass('azul_cielo');
+        });
+        
+        $('#todosCap3').click(function(){
+            $('#capitulo3 li').toggleClass('azul_cielo');
+        });
+        
+        $('#hermanosSig').click(function(){
+            $('#capitulo3 ~ li').toggleClass('azul_cielo');
+        });
+        
+        $('#elementoSig').click(function(){
+            $('#capitulo1 + li').toggleClass('azul_cielo');
+        }); 
+        
+        $('#elementoPri').click(function(){
+            $('li:first').toggleClass('azul_cielo');
+        });
+        
+        $('#elementoUlt').click(function(){
+            $('li:last').toggleClass('azul_cielo');
+        });
+        
+        $('#elementoPar').click(function(){
+            $('#capitulo3 li:even').toggleClass('azul_cielo');
+        });
+        
+    });//FIN READY()---
+    </script>
+
+    <style>
+        
+    .azul_cielo{
+        background: deepskyblue;
+        margin-left: 15px;
+    }
+        
+    </style>
+
+  </head>
+  <body>
+  <div>
+    <a id='todosli' href="#">Todos los li</a><br />
+    <a id='todosCap3' href="#">Todos los li descendientes del Capítulo 3</a><br />
+    <a id='hermanosSig' href="#">Hermanos siguientes del Cápitulo 3</a><br />
+    <a id='elementoSig' href="#">Elemento siguientes del Cápitulo 1</a><br />  
+    <a id='elementoPri' href="#">Primer li</a><br />
+    <a id='elementoUlt' href="#">Último li</a><br />
+    <a id='elementoPar' href="#">li Pares dentro del Capítulo 3</a><br />
+              
+  </div>
+  
+   <nav>
+    <ul id='ulPrincipal'>
+    <li id='capitulo1'>Capítulo 1</li>
+    <li id='capitulo2'>Capítulo 2</li>
+    <li id='capitulo3'>Capítulo 3
+        <ul>
+        <li>Punto 3.1</li>
+        <li>Punto 3.2
+            <ul>
+                <li>Ítem 3.2.1</li>
+                <li>Ítem 3.2.2</li>
+                <li>Ítem 3.2.3
+                    <ul>
+                        <li>Sub-Ítem 3.2.3.1</li>
+                        <li>Sub-Ítem 3.2.3.2</li>
+                        <li>Sub-Ítem 3.2.3.3</li>
+                        <li>Sub-Ítem 3.2.3.4</li>
+                        <li>Sub-Ítem 3.2.3.5</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Punto 3.3</li>
+        <li>Punto 3.4
+            <ul>
+                <li>Ítem 3.4.1</li>
+                <li>Ítem 3.4.2</li>
+                <li>Ítem 3.4.3</li>
+            </ul>
+        </li>
+        </ul>
+    </li>
+    <li id='capitulo4'>Capítulo 4
+        <ul>
+        <li>Punto 4.1</li>
+        <li>Punto 4.2
+            <ul>
+                <li>Ítem 4.2.1</li>
+                <li>Ítem 4.2.2</li>
+            </ul>
+        </li>
+        </ul>
+    </li>
+    <li id='capitulo5'>Capítulo 5</li>
+    </ul>
+    </nav>
+  </body>
+</html>
