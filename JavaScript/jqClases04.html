@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('button').on('click',function(){
+           var css=$('span').attr('style');
+            $('div').text(css);
+        });
+
+    });
+    </script>
+        
+
+    <style>
+        div{
+            width: 255px;
+            height: 18px;
+            border: 1px dottet black;
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <p><button>Encontrar</button></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo quibusdam unde, numquam quidem ipsam! Rem aspernatur optio labore, adipisci consequuntur, rerum deleniti cupiditate facilis deserunt illo pariatur odit, <span style="font-style:italic">distinctio!</span></p>
+    El estilo del &lt;span&gt; es: <div></div>
+  </body>
+</html>
