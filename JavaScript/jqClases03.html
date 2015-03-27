@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('a').on('click',function(){
+           $('div').toggleClass('ocultar'); 
+        });
+    });
+    </script>
+
+    <style>
+        a{
+            color: black;
+        }
+        div{
+            width: 255px;
+            padding: 3px;
+            border: 1px dottet black;
+            cursor: pointer;
+        }
+        .ocultar{
+            display: none;
+        }
+    </style>
+
+  </head>
+  <body>
+      <p><a href="#">In / Out</a></p>
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fugit, eum commodi totam corrupti explicabo perferendis soluta voluptatibus blanditiis repellendus earum quisquam fuga nihil nulla id. Animi maxime aliquid deleniti!</div>
+      <p>Resto de la página...</p>
+  </body>
+</html>
