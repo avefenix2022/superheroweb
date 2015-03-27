@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function(){        
+        $('div').mouseover(function(){
+           $(this).addClass('colorDeFondo'); 
+        });
+        $('div').mouseout(function(){
+           $(this).removeClass('colorDeFondo'); 
+        });
+    });
+    </script>
+
+    <style>
+        div{
+            width: 150px;
+            height: 35px;
+            line-height: 35px;
+            vertical-align: middle;
+            text-align: center;
+            cursor: pointer;
+        }
+        .colorDeFondo{
+            background-color: #9cf;
+            border: 1px dottet black;
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <div>Importante</div>
+    <div>Importante</div>
+    <div>Importante</div>
+  </body>
+</html>
