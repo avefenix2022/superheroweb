@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('p').mouseover(function(){
+           $(this).css({'background-color': '#9cf', 'font-style':'italic'}); 
+        });
+        $('p').mouseout(function(){
+           $(this).css({'background-color': '', 'font-style':''}); 
+        });
+  
+    });
+    </script>
+        
+    <link rel="stylesheet" href="" />
+    <style>
+        p{
+            font: Arial sans-serif;
+        }
+
+    </style>
+
+  </head>
+  <body>
+      <p>1.- Pasar el ratón por encima del texto.</p>
+      <p>2.- Pasar el ratón por encima del texto.</p>
+
+  </body>
+</html>

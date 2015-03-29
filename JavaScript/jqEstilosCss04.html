@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('div').on('click',function(){
+            altura=$(this).height();
+            anchura=$(this).width();
+            $(this).height(altura*2).width(anchura*2);
+        });
+    });
+    </script>
+        
+    <link rel="stylesheet" href="" />
+    <style>
+        div{
+            position: relative;
+            width: 75px;
+            height: 75px;
+            border: 1px solid black;
+            background-color: #9cf;
+        }
+
+    </style>
+
+  </head>
+  <body>
+      <div></div>
+  </body>
+</html>

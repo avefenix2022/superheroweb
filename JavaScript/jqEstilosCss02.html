@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#div1').on('click', function(){
+            var color = $(this).css('background-color');
+            $('#resultado').html('El color es <span>' + color + '</span>.');
+        });
+        $('#div2').on('click', function(){
+            var borde = $(this).css('border-color');
+            $('#resultado').html('El color del borde es <span>' + borde + '</span>.');
+        });
+        $('#div3').on('click', function(){
+            var visibilidad = $(this).css('visibility');
+            $('#resultado').html('La visibilidad es <span>' + visibilidad + '</span>.');
+        });
+        
+    });
+    </script>
+        
+    <link rel="stylesheet" href="" />
+    <style>
+        div{
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            float: left;
+            background-color: #9cf;
+        }
+    </style>
+
+  </head>
+  <body>
+      <div id="div1"></div>
+      <div id="div2" style='border: 3px solid black;'></div>
+      <div id="div3" style='visibility: visible;'></div>
+      <p id='resultado' style='clear: left;'>Resultado </p>
+
+  </body>
+</html>
