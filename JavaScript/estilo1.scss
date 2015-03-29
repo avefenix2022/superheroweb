@@ -1,0 +1,46 @@
+        $izquierda:20px;
+        $arriba:20px;
+        $ancho:80px;
+        $alto:50px;
+        $elpading:4px;
+        $color:#336699;
+        #caja1{
+            position: absolute;
+            left: $izquierda;
+            top: $arriba;
+            width: $ancho;
+            height: $alto;
+            padding: $elpading;
+            border: 2px solid black;
+            background: $color+#993333;
+        }
+        #caja2{
+            position: absolute;
+            left: $izquierda+30px;
+            top: $arriba+30px;
+            width: $ancho;
+            height: $alto;
+            padding: $elpading;
+            border: 2px solid black;
+            background: $color+#339933;
+        }
+        #caja3{
+            position: absolute;
+            left: $izquierda+60px;
+            top: $arriba+60px;
+            width: $ancho;
+            height: $alto;
+            padding: $elpading;
+            border: 2px solid black;
+            background: $color+#333399;
+        }
+        #caja4{
+            position: absolute;
+            left: $izquierda+90px;
+            top: $arriba+90px;
+            width: $ancho;
+            height: $alto;
+            padding: $elpading;
+            border: 2px solid black;
+            background: $color+#999999;
+        }

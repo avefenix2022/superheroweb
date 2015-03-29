@@ -1,0 +1,41 @@
+#caja1 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 80px;
+  height: 50px;
+  padding: 4px;
+  border: 2px solid black;
+  background: #cc99cc; }
+
+#caja2 {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 80px;
+  height: 50px;
+  padding: 4px;
+  border: 2px solid black;
+  background: #66ffcc; }
+
+#caja3 {
+  position: absolute;
+  left: 80px;
+  top: 80px;
+  width: 80px;
+  height: 50px;
+  padding: 4px;
+  border: 2px solid black;
+  background: #6699ff; }
+
+#caja4 {
+  position: absolute;
+  left: 110px;
+  top: 110px;
+  width: 80px;
+  height: 50px;
+  padding: 4px;
+  border: 2px solid black;
+  background: #ccffff; }
+
+/*# sourceMappingURL=estilo1.css.map */
