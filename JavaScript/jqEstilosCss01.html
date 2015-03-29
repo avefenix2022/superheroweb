@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        /*
+        $('#caja1').mouseover(function(){
+            $(this).css('z-index','1000');
+        });
+        $('#caja1').mouseout(function(){
+            $(this).css('z-index','');
+        });
+        */
+        $('div').mouseover(function(){
+            $(this).css('z-index','1000');
+        });
+        $('div').mouseout(function(){
+            $(this).css('z-index','');
+        });
+    });
+    </script>
+        
+
+    <style>
+        #caja1{
+            position: absolute;
+            left: 20px;
+            top: 20p;
+            width: 80px;
+            height: 50px;
+            padding: 4px;
+            border: 2px solid black;
+            background: #9cf;
+        }
+        #caja2{
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            width: 80px;
+            height: 50px;
+            padding: 4px;
+            border: 2px solid black;
+            background: white;
+        }
+        #caja3{
+            position: absolute;
+            left: 80px;
+            top: 80px;
+            width: 80px;
+            height: 50px;
+            padding: 4px;
+            border: 2px solid black;
+            background: #cf9;
+        }
+        #caja4{
+            position: absolute;
+            left: 110px;
+            top: 110px;
+            width: 80px;
+            height: 50px;
+            padding: 4px;
+            border: 2px solid black;
+            background: #fc9;
+        }
+    </style>
+
+  </head>
+  <body>
+    <div id="caja1">z-index 1</div>
+    <div id="caja2">z-index 2</div>
+    <div id="caja3">z-index 3</div>
+    <div id="caja4">z-index 4</div>
+  </body>
+</html>
