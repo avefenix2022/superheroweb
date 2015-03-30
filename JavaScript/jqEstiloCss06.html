@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('input').on('click',function(){
+            var texto=$('p');
+            
+            var tamaño=texto.css('fontSize');
+            
+            numero=parseFloat(tamaño,10);
+            
+            var unidad=tamaño.slice(-2);
+            
+            
+            if(this.id=='mas'){
+                numero+=1.2;
+            }else if(this.id='menos'){
+                numero/=1.2;
+            }
+            texto.css('fontSize', numero+unidad)
+            
+        });
+    });
+    </script>
+        
+    <link rel="stylesheet" href="" />
+    <style>
+        p{
+            font-size: 1em;
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <input type="button" value="Más Grande" id="mas">
+    <input type="button" value="Más Pequeño" id=menos>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, obcaecati quas molestiae excepturi blanditiis accusamus impedit asperiores facere, consequatur eius provident? Fuga illo cupiditate ullam distinctio natus veniam! Omnis, dignissimos!</p>
+  </body>
+</html>
