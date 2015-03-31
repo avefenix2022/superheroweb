@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>jQuery</title>
+<script src="js/jquery.js"></script>
+<script>
+$(document).ready(function(){
+
+                $('#clic1 > p').click(function() {
+                    $('#reloj1').animate({
+                    opacity: 0.25,
+                    left: '+=50',
+                    height: 'toggle'
+                    }, 5000, function() {
+                        // Animation complete.
+                    });
+                }) 
+                
+                $("#der").click(function(){
+                    $("#reloj1").animate({"left": "+=50px"}, "slow");
+                });
+                
+                $("#izq").click(function(){
+                    $("#reloj1").animate({"left": "-=50px"}, "slow");
+                });
+                
+	
+});
+</script>
+<style>
+#clic1 p:hover{
+    cursor: pointer;
+}
+
+#reloj1{
+    position: relative; 
+    left: 10px;
+}
+
+
+</style>
+</head>
+<body>
+
+        <section id="clic1">
+            <p>Clic aqu&iacute;</p>
+             <button id="izq">&laquo;</button> <button id="der">&raquo;</button>
+             <br>
+            <img id="reloj1" src="img/reloj.png" alt="" />
+        </section>  
+
+</body>
+</html>

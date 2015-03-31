@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery</title>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    this.zoom_imagen=function(){
+        xOffset=10;
+        yOffset=30;
+        
+        $('a.zoom').hover(function(e)){
+            this.texto=this.title;
+            this.title='';
+            
+            var leyenda=(this.texto!='' ? '<br>' + this.texto: '';
+                         $('body').append(''))
+        }
+    };    
+        
+    $(document).ready(function(){
+        zoom_imagen();
+    });
+    </script>
+        
+    <link rel="stylesheet" href="" />
+    <style>
+        body{
+            margin: 0px;
+            padding: 10px;
+            font: 80% Arial, sans-serif;
+        }
+        h2{
+            clear: both;
+            font-size: 160%;
+            font-weight: normal;
+            margin: 0px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        img{
+            border: 1px solid black;
+        }
+        ul, li{
+            margin: 0px;
+            padding: 0px;
+        }
+        li{
+            list-style: none;
+            float: left;
+            display: inline;
+            margin-right: 10px;
+        }
+        #zoom{
+            position: absolute;
+            border: 1px solid #333;
+            background: #333;
+            padding: 3px;
+            display: none;
+            color: #fff;
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <h2>Efecto de Zoom con leyenda</h2>
+    <ul>
+        <li><a href="img/oso1.jpg" class='zoom' title='Oso polar en peligro'><img src="img/pt_oso1.jpg" alt=""></a></li>
+        <li><a href="img/oso1.jpg" class='zoom' title='Oso polar en peligro'><img src="img/pt_oso1.jpg" alt=""></a></li>
+        <li><a href="img/oso1.jpg" class='zoom' title='Oso polar en peligro'><img src="img/pt_oso1.jpg" alt=""></a></li>
+    </ul>
+  </body>
+</html>
